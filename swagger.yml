@@ -1,0 +1,24 @@
+swagger: "2.0"
+info:
+ description: "UNIE Swagger definition"
+ version: "1.0.0"
+ title: "UNIE REST API"
+ consumes:
+  - "application/json"
+ produces:
+  - "application/json"
+ basePath: "/api"
+ paths:
+  /rtr:
+   get:
+    operationId: "rtr.get"
+    tags:
+     - "Routers"
+    summary: "Gets stuff from routers"
+    responses:
+     200:
+      description: "Success"
+      content:
+       application/json:
+        schema:
+      
